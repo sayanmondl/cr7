@@ -7,7 +7,9 @@ dotenv.config();
 
 const app = express();
 const port = 5000;
-app.use(cors());
+app.use(cors({
+  origin: 'https://cr7x.vercel.app'
+}));
 app.use(express.json());
 
 const client = new MongoClient(process.env.MONGODB_URI);
