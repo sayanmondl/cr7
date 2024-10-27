@@ -4,7 +4,7 @@ import { resolve } from 'path';
 export default defineConfig({
   server: {
     proxy: {
-      '/api': ''
+      '/api': 'https://cr7-backend.vercel.app'
     }
   },
   build: {
