@@ -2,11 +2,6 @@ import { defineConfig } from 'vite';
 import { resolve } from 'path';
 
 export default defineConfig({
-  server: {
-    proxy: {
-      '/api': 'https://cr7-backend.vercel.app'
-    }
-  },
   build: {
     rollupOptions: {
       input: {
