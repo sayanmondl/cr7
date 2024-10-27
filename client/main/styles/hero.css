@@ -1,0 +1,321 @@
+@keyframes slideRight {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translatex(10px);
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.hero {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 50px;
+  opacity: 0;
+}
+
+.carousel-item {
+  position: relative;
+  min-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image {
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.hero-text-line {
+  display: inline-block;
+}
+
+.image-texts {
+  position: absolute;
+  z-index: 2;
+  bottom: 50px;
+  left: 10%;
+}
+
+.image-para {
+  width: 60vw;
+  font-family: var(--subtext-font);
+  color: var(--text-color);
+  font-weight: 300;
+  font-size: 16px;
+  opacity: 0;
+}
+
+.carousel {
+  display: flex;
+  min-width: 100%;
+  margin-left: -1px;
+  margin-right: -1px;
+  transition: transform 0.5s ease;
+}
+
+.carousel-container {
+  width: 55%;
+  position: relative;
+  overflow: hidden;
+}
+
+.right-arrow {
+  align-items: center;
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  font-family: var(--nav-font);
+  font-size: 1rem;
+  line-height: 1.5;
+  font-style: italic;
+  text-decoration: none;
+  text-transform: uppercase;
+  outline: 0;
+  border: 0;
+  padding: 1rem;
+  opacity: 0;
+}
+
+.right-arrow::before {
+  background-color: #fff;
+  content: '';
+  display: inline-block;
+  height: 1px;
+  margin-right: 10px;
+  transition: all 0.42s cubic-bezier(0.25, 0.8, 0.25, 1);
+  width: 0;
+}
+
+.right-arrow:hover::before {
+  background-color: #fff;
+  width: 3rem;
+}
+
+.right-arrow-button-container {
+  width: 100px;
+  position: absolute;
+  bottom: 50px;
+  right: 2%;
+}
+
+video.cristiano {
+  width: 100%;
+  height: auto;
+}
+
+img.cristiano {
+  width: 100%;
+  height: auto;
+  transition: transform 1s ease;
+}
+
+.image:hover img.cristiano {
+  transform: scale(1.15);
+}
+
+.background-blend {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to right, var(--base-color), transparent, var(--base-color)),
+    linear-gradient(to bottom, var(--base-color), transparent, var(--base-color));
+}
+
+.cristiano-ronaldo {
+  font-family: var(--nav-font);
+  color: var(--text-color);
+  font-size: larger;
+  width: fit-content;
+  white-space: nowrap;
+  font-weight: 500;
+}
+
+.image-text-line {
+  opacity: 0;
+}
+
+.hero-text {
+  font-family: var(--base-font);
+  font-weight: 100;
+  font-size: 48px;
+  width: fit-content;
+  color: var(--text-color);
+  text-wrap: balance;
+}
+
+.text-container {
+  width: 30%;
+}
+
+.siuu {
+  scale: 0;
+  font-weight: 100;
+  opacity: 0;
+  font-family: var(--base-font);
+  color: var(--text-color);
+  position: absolute;
+  z-index: 3;
+  font-style: italic;
+  top: 35%;
+  left: 30%;
+}
+
+.hero-para {
+  font-family: var(--subtext-font);
+  font-size: large;
+  color: var(--text-color);
+  font-weight: 200;
+}
+
+.dots {
+  position: absolute;
+  display: flex;
+  left: 50%;
+  bottom: 20px;
+  transform: translate(-50%, 0);
+  width: 50%;
+  gap: 10px;
+}
+
+.dots span {
+  flex-grow: 1;
+  height: 0.5px;
+  background-color: #636363;
+}
+
+.dots span.active {
+  background-color: #ffffff;
+}
+
+@media (max-width: 1300px) {
+  .hero-text {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .carousel-container {
+    width: 60%;
+  }
+}
+
+@media (max-width: 1100px) {
+  .hero-para {
+    font-size: medium;
+  }
+
+  .carousel-container {
+    width: 65%;
+  }
+}
+
+@media (max-width: 980px) {
+  .hero-text {
+    font-size: 28px;
+  }
+
+  .cristiano-ronaldo {
+    font-size: 20px;
+  }
+
+  .image-para {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 920px) {
+  .hero {
+    margin-left: 5%;
+    margin-right: 5%;
+    flex-direction: column;
+    height: unset;
+  }
+
+  .hero-text {
+    font-size: x-large;
+  }
+
+  .hero-para {
+    font-size: 14px;
+  }
+
+  .text-container {
+    width: 80%;
+    margin-top: 64px;
+  }
+
+  .carousel-container {
+    width: 80%;
+  }
+}
+
+@media (max-width: 780px) {
+  .right-arrow-button-container {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .carousel-item {
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+
+  .image-texts {
+    margin-top: 20px;
+    align-self: flex-start;
+    position: relative;
+    z-index: 2;
+    bottom: 0;
+    left: 10%;
+  }
+
+  .cristiano-ronaldo {
+    font-size: large;
+  }
+
+  .cristiano-ronaldo {
+    font-size: 16px;
+  }
+
+  .image-para {
+    font-size: 14px;
+  }
+
+  .dots {
+    bottom: 110px;
+  }
+}
+
+@media (max-width: 500px) {
+  .image-para {
+    font-size: 12px;
+  }
+  
+  .carousel-container {
+    width: 100%;
+  }
+}

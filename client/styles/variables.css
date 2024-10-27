@@ -1,0 +1,24 @@
+:root {
+  --base-color: #222222;
+  --base-color-2: #1a1a1a;
+  --text-color: #ffffff;
+  --text-color-2: #242424;
+  --text-color-faded: #a2a2a2;
+  --text-color-faded-2: #d3d3d3;
+  --border-color: #5d5d5d;
+  --border-color-2: #535353;
+  --subtext-font: 'Roboto Condensed', sans-serif;
+  --style-font: 'Imbue';
+  --style-font-subtext: 'Metal';
+  --nav-font: 'Barlow Condensed', sans-serif;
+  --slight-transparent: rgba(34, 34, 34, 0.7);
+  --transparent: rgba(0, 0, 0, 0);
+  --placeholder-color: #6b6b6b;
+  --surface-color: #484848;
+  --surface-color-2: #343434;
+  --base-font: 'League Gothic', sans-serif;
+  --underline-color: #de7835;
+  --accent-color: #ff934c;
+  --nav-padding: 10px 20px 10px 20px;
+  --nav-margin: 10px 20px 10px 20px;
+}

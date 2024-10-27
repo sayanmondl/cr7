@@ -1,0 +1,22 @@
+.credit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.credit p {
+  font-family: var(--subtext-font);
+  color: var(--text-color-faded);
+  font-weight: 300;
+}
+
+.credit a {
+  text-decoration: underline;
+  color: var(--accent-color);
+}
+
+@media (max-width: 500px) {
+  .credit p {
+    font-size: 14px;
+  }
+}

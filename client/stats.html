@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="A fan-made website dedicated to Cristiano Ronaldo, featuring his latest news, career highlights, statistics, achievements, and personal insights into one of the greatest footballers in history."
+    />
+
+    <link rel="stylesheet" href="/styles/variables.css" />
+    <link rel="stylesheet" href="/styles/default-styles.css" />
+    <link rel="preload" href="/styles/nav-styles.css" as="style" onload="this.rel='stylesheet'" />
+    <link rel="stylesheet" href="/styles/links.css" />
+    <link rel="stylesheet" href="/styles/credit.css" />
+    <link rel="stylesheet" href="/styles/footer.css" />
+    <link rel="stylesheet" href="/styles/preloader.css" />
+
+    <link rel="stylesheet" href="/stats/styles/key-stats.css" />
+    <link rel="stylesheet" href="/stats/styles/progression.css" />
+    <link rel="stylesheet" href="/stats/styles/tables.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600&family=Imbue:opsz,wght@10..100,100..900&family=League+Gothic&family=Metal&family=Roboto+Condensed:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="icon" type="image/svg+xml" href="/cr7.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cristiano Ronaldo</title>
+  </head>
+
+  <body>
+    <div id="preloader">
+      <span class="loader"></span>
+    </div>
+
+    <div id="app" class="app">
+      <nav class="navbar">
+        <div class="logo">
+          <a href="/index.html">
+            <img loading="lazy" width="50px" height="30px" src="/cr7-text.svg" alt="CR7" />
+          </a>
+        </div>
+
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="/index.html">
+              HOME
+              <div class="underline-nav"></div>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="/stats.html">
+              STATS
+              <div class="underline-nav"></div>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="/outside-football.html">
+              OUTSIDE FOOTBALL
+              <div class="underline-nav"></div>
+            </a>
+          </li>
+        </ul>
+
+        <button id="hamButton" class="hamburger">
+          <img loading="lazy" src="/ui/menu-burger.png" alt="" />
+        </button>
+
+        <div class="hamburger-menu">
+          <ul class="hamburger-nav-list">
+            <li class="nav-item">
+              <a href="/index.html">
+                HOME
+                <div class="underline-nav"></div>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="/stats.html">
+                STATS
+                <div class="underline-nav"></div>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="/outside-football.html">
+                OUTSIDE FOOTBALL
+                <div class="underline-nav"></div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="key-stats">
+        <h1>
+          KEY STATS
+          <div class="underline"></div>
+        </h1>
+        <div class="key-stats-container">
+          <div class="key-stat-item overall">
+            <div class="key-stat-item-title">
+              <h1>OVERALL</h1>
+              <img loading="lazy" src="/ui/football.svg" alt="" />
+            </div>
+            <div class="key-stat-item-info">
+              <div class="stat-info-text">
+                <h1 class="goals"></h1>
+                <p>GOALS</p>
+                <div style="flex-grow: 1"></div>
+                <h1 class="apps"></h1>
+                <p>APPS.</p>
+              </div>
+              <p>Cristiano Ronaldo holds the record for the most goals scored in all official senior competitions</p>
+            </div>
+          </div>
+
+          <div class="key-stat-item international">
+            <div class="key-stat-item-title">
+              <h1>INTERNATIONAL</h1>
+              <img loading="lazy" src="/ui/football.svg" alt="" />
+            </div>
+            <div class="key-stat-item-info">
+              <div class="stat-info-text">
+                <h1 class="goals"></h1>
+                <p>GOALS</p>
+                <div style="flex-grow: 1"></div>
+                <h1 class="apps"></h1>
+                <p>APPS.</p>
+              </div>
+              <p>Record holder for the most international goals scored in men's football.</p>
+            </div>
+          </div>
+
+          <div class="key-stat-item ucl">
+            <div class="key-stat-item-title">
+              <h1>UCL</h1>
+              <img loading="lazy" src="/ui/football.svg" alt="" />
+            </div>
+            <div class="key-stat-item-info">
+              <div class="stat-info-text">
+                <h1 class="goals"></h1>
+                <p>GOALS</p>
+                <div style="flex-grow: 1"></div>
+                <h1 class="apps"></h1>
+                <p>APPS.</p>
+              </div>
+              <p>Cristiano holds the record for the most goals scored in UEFA Champions League history</p>
+            </div>
+          </div>
+
+          <div class="key-stat-item laliga">
+            <div class="key-stat-item-title">
+              <h1>LALIGA</h1>
+              <img loading="lazy" src="/ui/football.svg" alt="" />
+            </div>
+            <div class="key-stat-item-info">
+              <div class="stat-info-text">
+                <h1 class="goals"></h1>
+                <p>GOALS</p>
+                <div style="flex-grow: 1"></div>
+                <h1 class="apps"></h1>
+                <p>APPS.</p>
+              </div>
+              <p>Fastest La Liga player to score 300 league goals (286 matches)</p>
+            </div>
+          </div>
+
+          <div class="key-stat-item pl">
+            <div class="key-stat-item-title">
+              <h1>PREMIERE LEAGUE</h1>
+              <img loading="lazy" src="/ui/football.svg" alt="" />
+            </div>
+            <div class="key-stat-item-info">
+              <div class="stat-info-text">
+                <h1 class="goals"></h1>
+                <p>GOALS</p>
+                <div style="flex-grow: 1"></div>
+                <h1 class="apps"></h1>
+                <p>APPS.</p>
+              </div>
+              <p>Most Premier League goals in a season (of 38 games)</p>
+            </div>
+          </div>
+
+          <div class="key-stat-item seriea">
+            <div class="key-stat-item-title">
+              <h1>SERIE A</h1>
+              <img loading="lazy" src="/ui/football.svg" alt="" />
+            </div>
+            <div class="key-stat-item-info">
+              <div class="stat-info-text">
+                <h1 class="goals"></h1>
+                <p>GOALS</p>
+                <div style="flex-grow: 1"></div>
+                <h1 class="apps"></h1>
+                <p>APPS.</p>
+              </div>
+              <p>First player to score in seven consecutive away matches in a debut Serie A season</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="progression">
+        <!-- Heading -->
+        <h1>
+          OVERALL PROGRESSION
+          <div class="underline"></div>
+        </h1>
+
+        <!-- Buttons -->
+        <div class="options">
+          <button data-stat="goals">Goals</button>
+          <button data-stat="assists">Assists</button>
+          <button data-stat="appearances">Appearances</button>
+        </div>
+
+        <!-- Stats Canvas -->
+        <div class="overall-progression">
+          <canvas id="overallChart"></canvas>
+        </div>
+
+        <h1 style="margin-top: 100px">
+          CLUB PROGRESSION
+          <div class="underline"></div>
+        </h1>
+
+        <!-- Club Buttons -->
+        <div class="club-options">
+          <button data-club="portugal">Portugal</button>
+          <button data-club="madeira">Madeira</button>
+          <button data-club="manchester">Manchester</button>
+          <button data-club="madrid">Madrid</button>
+          <button data-club="turin">Turin</button>
+          <button data-club="riyadh">Riyadh</button>
+        </div>
+
+        <!-- Club Stats Canvas -->
+        <div class="club-progression">
+          <canvas id="clubChart"></canvas>
+        </div>
+      </div>
+
+      <h1 class="header">
+        STATS
+        <div class="underline"></div>
+      </h1>
+
+      <div class="tables">
+        <div id="laligaTable" class="table">
+          <h2>
+            La Liga Stats
+            <img loading="lazy" src="/logo/madrid.svg" alt="" />
+          </h2>
+        </div>
+
+        <div id="premierTable" class="table">
+          <h2>
+            Premier League Stats
+            <img loading="lazy" src="/logo/manchester.svg" alt="" />
+          </h2>
+        </div>
+
+        <div id="serieTable" class="table">
+          <h2>
+            Serie A Stats
+            <img loading="lazy" src="/logo/juventus.svg" alt="" />
+          </h2>
+        </div>
+
+        <div id="saudiTable" class="table">
+          <h2>
+            Saudi Pro League Stats
+            <img loading="lazy" src="/logo/alnassr.svg" alt="" />
+          </h2>
+        </div>
+      </div>
+
+      <div class="international-table">
+        <h2>
+          International Stats
+          <img loading="lazy" src="/logo/portugal.svg" alt="" />
+        </h2>
+        <table id="internationalTable">
+          <thead>
+            <tr>
+              <th>Year</th>
+              <th>Competitive Apps</th>
+              <th>Competitive Goals</th>
+              <th>Friendly Apps</th>
+              <th>Friendly Goals</th>
+              <th>Total Apps</th>
+              <th>Total Goals</th>
+            </tr>
+          </thead>
+
+          <tbody></tbody>
+
+          <tfoot>
+            <tr>
+              <td>Total</td>
+              <td id="totalCompetitiveApps"></td>
+              <td id="totalCompetitiveGoals"></td>
+              <td id="totalFriendlyApps"></td>
+              <td id="totalFriendlyGoals"></td>
+              <td id="totalOverallApps"></td>
+              <td id="totalOverallGoals"></td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+
+      <div style="display: flex; margin-top: 100px; flex-direction: column; align-items: center; gap: 30px">
+        <h2
+          style="
+            display: flex;
+            align-items: center;
+            font-family: var(--base-font);
+            font-weight: 100;
+            color: var(--text-color);
+            gap: 20px;
+            margin: 0 auto;
+          "
+        >
+          Stats Comparison with Lionel Messi
+          <img loading="lazy" src="/logo/argentina.svg" alt="" />
+        </h2>
+        <a href="/index.html">
+          <button class="enter-button">
+            <span>View</span>
+            <img loading="lazy" src="/ui/arrow-right.svg" alt="arrow-icon" />
+          </button>
+        </a>
+      </div>
+
+      <div style="height: 1px; background-color: #414141; margin: 30px 15%; margin-bottom: 100px"></div>
+
+      <div class="links">
+        <div class="download-link">
+          <h1>Download the stats JSON file</h1>
+          <a href="/api/stats/download" download>
+            <button class="download-button">
+              <span>Download</span>
+              <img loading="lazy" src="/ui/download.svg" alt="download-icon" />
+            </button>
+          </a>
+        </div>
+
+        <div class="contact">
+          <p>
+            If there is any issue in the stats or not updated, <br />
+            Inform here:
+          </p>
+          <textarea name="mistakes" placeholder="Your text goes here ..."></textarea>
+          <button class="submit-button">Submit</button>
+        </div>
+      </div>
+
+      <div class="credit">
+        <p>
+          Designed & built by
+          <a href="https://github.com/sayanmondl/" target="_blank">sayanmondl</a>
+        </p>
+      </div>
+
+      <footer>
+        <div class="footer">
+          <p>&copy; 2024 Cristiano Ronaldo Fan Website.</p>
+          <p><a href="#">Privacy Policy</a></p>
+        </div>
+        <p class="disclaimer">
+          This is a fan-made website and is not affiliated with Cristiano Ronaldo, his representatives, or any brands he
+          works with. Images and media are the property of their respective owners.
+        </p>
+      </footer>
+    </div>
+
+    <script type="module" src="/stats/scripts/progression.js"></script>
+    <script type="module" src="/stats/scripts/keystats.js"></script>
+    <script type="module" src="/stats/scripts/tables.js"></script>
+
+    <script type="module" src="/modules/nav.js"></script>
+    <script type="module" src="/modules/preloader.js"></script>
+  </body>
+</html>

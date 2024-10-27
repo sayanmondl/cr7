@@ -1,0 +1,144 @@
+.progression {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5%;
+  padding-bottom: 50px;
+  border-radius: 20px;
+  background-color: var(--base-color-2);
+}
+
+.progression h1 {
+  font-family: var(--base-font);
+  font-weight: 100;
+  font-size: 48px;
+  color: var(--text-color);
+}
+
+.options {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 20px;
+  padding: 5px 0;
+  background-color: var(--surface-color-2);
+  margin-top: 30px;
+  margin-bottom: 50px;
+  border-radius: 40px;
+}
+
+.options button {
+  all: unset;
+  flex-grow: 1;
+  height: 30px;
+  padding: 0 16px;
+  margin: 0 5px;
+  font-family: var(--subtext-font);
+  color: var(--text-color);
+  text-align: center;
+  cursor: pointer;
+  border-radius: 30px;
+}
+
+.options button:hover {
+  background-color: #494949;
+}
+
+.options button.active {
+  background-color: white;
+  color: var(--text-color-2);
+}
+
+canvas {
+  width: 100%;
+  height: 450px;
+}
+
+.club-progression-container {
+  display: flex;
+  width: 80%;
+}
+
+.club-options {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 20px;
+  padding: 5px 0;
+  background-color: var(--surface-color-2);
+  margin-top: 30px;
+  margin-bottom: 50px;
+  border-radius: 40px;
+}
+
+.club-options button {
+  all: unset;
+  flex-grow: 1;
+  padding: 0 16px;
+  height: 30px;
+  margin: 0 5px;
+  font-family: var(--subtext-font);
+  color: var(--text-color);
+  text-align: center;
+  cursor: pointer;
+  border-radius: 30px;
+}
+
+.club-options button:hover {
+  background-color: #494949;
+}
+
+.club-options button.active {
+  background-color: white;
+  color: var(--text-color-2);
+}
+
+@media (max-width: 1300px) {
+  .progression h1 {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 980px) {
+  .progression h1 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 750px) {
+  .club-options {
+    background-color: transparent;
+  }
+
+  .club-options button {
+    background-color: var(--surface-color-2);
+    margin-top: 10px;
+  }
+
+  canvas {
+    height: 350px;
+  }
+}
+
+@media (max-width: 500px) {
+  .club-options {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+
+  .club-options button {
+    font-size: 14px;
+  }
+
+  .options {
+    background-color: transparent;
+    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+
+  .options button {
+    background-color: var(--surface-color-2);
+    margin-top: 10px;
+  }
+}

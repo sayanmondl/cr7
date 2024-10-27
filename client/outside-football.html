@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="A fan-made website dedicated to Cristiano Ronaldo, featuring his latest news, career highlights, statistics, achievements, and personal insights into one of the greatest footballers in history."
+    />
+
+    <link rel="stylesheet" href="/styles/variables.css" />
+    <link rel="stylesheet" href="/styles/default-styles.css" />
+    <link rel="preload" href="/styles/nav-styles.css" as="style" onload="this.rel='stylesheet'" />
+    <link rel="stylesheet" href="/styles/credit.css" />
+    <link rel="stylesheet" href="/styles/footer.css" />
+    <link rel="stylesheet" href="/styles/preloader.css" />
+
+    <link rel="stylesheet" href="/outside-football/styles/introduction.css" />
+    <link rel="stylesheet" href="/outside-football/styles/scroll-view.css" />
+    <link rel="stylesheet" href="/outside-football/styles/philanthropy.css" />
+    <link rel="stylesheet" href="/outside-football/styles/social-media.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600&family=Imbue:opsz,wght@10..100,100..900&family=League+Gothic&family=Metal&family=Roboto+Condensed:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="icon" type="image/svg+xml" href="/cr7.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cristiano Ronaldo</title>
+  </head>
+
+  <body>
+    <div id="preloader">
+      <span class="loader"></span>
+    </div>
+
+    <div id="app" class="app">
+      <nav class="navbar">
+        <div class="logo">
+          <a href="/index.html">
+            <img loading="lazy" width="50px" height="30px" src="/cr7-text.svg" alt="CR7" />
+          </a>
+        </div>
+
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="/index.html">
+              HOME
+              <div class="underline-nav"></div>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="/stats.html">
+              STATS
+              <div class="underline-nav"></div>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="/outside-football.html">
+              OUTSIDE FOOTBALL
+              <div class="underline-nav"></div>
+            </a>
+          </li>
+        </ul>
+
+        <button id="hamButton" class="hamburger">
+          <img loading="lazy" src="/ui/menu-burger.png" alt="" />
+        </button>
+
+        <div class="hamburger-menu">
+          <ul class="hamburger-nav-list">
+            <li class="nav-item">
+              <a href="/index.html">
+                HOME
+                <div class="underline-nav"></div>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="/stats.html">
+                STATS
+                <div class="underline-nav"></div>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="/outside-football.html">
+                OUTSIDE FOOTBALL
+                <div class="underline-nav"></div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="introduction">
+        <div class="background">
+          <div class="background-blend"></div>
+          <img src="/others/background.jpg" alt="" />
+        </div>
+        <div class="introduction-text">
+          <h1 class="anim">Beyond the Football Pitch.<br />The Other Side of Cristiano Ronaldo.</h1>
+          <p class="anim">
+            Cristiano Ronaldo's influence reaches far beyond the football pitch. From business ventures to charity work,
+            he continues to make an impact off the field, shaping industries and inspiring millions worldwide.
+          </p>
+          <button class="enter-button" id="diveIn">
+            <span>Explore</span>
+            <img loading="lazy" src="/ui/arrow-right.svg" alt="arrow-icon" />
+          </button>
+        </div>
+      </div>
+
+      <div class="business-ventures">
+        <h1>
+          BUSINESS VENTURES
+          <div class="underline"></div>
+        </h1>
+
+        <div class="wrapper">
+          <div class="scroll-container">
+            <section class="section">
+              <div class="texts">
+                <h1 class="anim">CR7 Brand</h1>
+                <p class="anim">
+                  Ronaldo's personal brand, CR7, started with his signature clothing line. Over time, it has expanded
+                  into various product categories, including
+                  <span style="font-weight: 600">CR7 Eyewear, CR7 Underwear, CR7 Denim.</span><br /><br />The
+                  <span style="font-weight: 600">CR7 brand</span>
+                  has grown globally, symbolizing Ronaldo's influence in the fashion world.
+                </p>
+              </div>
+              <div class="image">
+                <img loading="lazy" src="/others/cr7brand.jpg" alt="" />
+              </div>
+            </section>
+
+            <section class="section">
+              <div class="texts">
+                <h1 class="anim">CR7 Hotels (Pestana CR7)</h1>
+                <p class="anim">
+                  In collaboration with the Pestana Hotel Group, Ronaldo has launched a series of luxury hotels under
+                  the <span style="font-weight: 600">Pestana CR7</span> name. These hotels are located in prime
+                  destinations such as: <span style="font-weight: 600">Lisbon</span> and
+                  <span style="font-weight: 600">Funchal</span> (Madeira), Ronaldo's hometown.
+                  <span style="font-weight: 600">Madrid</span> and <span style="font-weight: 600">New York City</span>,
+                  two cities with strong connections to his career.
+                </p>
+              </div>
+              <div class="image">
+                <img loading="lazy" src="/others/pestanacr7.jpg" alt="" />
+              </div>
+            </section>
+
+            <section class="section">
+              <div class="texts">
+                <h1 class="anim">CR7 Fitness</h1>
+                <p class="anim">
+                  In partnership with <span style="font-weight: 600">Crunch Fitness</span>, Ronaldo has invested in a
+                  chain of gyms known as <span style="font-weight: 600">CR7 Fitness</span>. These gyms provide
+                  state-of-the-art fitness equipment and facilities, inspired by Ronaldo's own fitness regime. The goal
+                  is to make fitness more accessible, promoting a healthy lifestyle, and encouraging fans to stay fit
+                  like their idol.
+                </p>
+              </div>
+              <div class="image">
+                <img loading="lazy" src="/others/cr7fitness.jpeg" alt="" />
+              </div>
+            </section>
+
+            <section class="section">
+              <div class="texts">
+                <h1 class="anim">Endorsements and Collaborations</h1>
+                <p class="anim">
+                  Cristiano Ronaldo's global appeal has attracted numerous lucrative endorsement deals, with brands like
+                  <span style="font-weight: 600">Nike, Herbalife,</span> and
+                  <span style="font-weight: 600">Clear</span>. His lifetime deal with
+                  <span style="font-weight: 600">Nike</span> is one of the most significant sponsorship contracts ever
+                  made with an athlete, further solidifying his status as a global brand ambassador.
+                </p>
+              </div>
+              <div class="image">
+                <img loading="lazy" src="/others/boots.jpg" alt="" />
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+
+      <div class="hover-showcase">
+        <div class="item">
+          <div class="background-blend-2"></div>
+          <img loading="lazy" src="/others/statue-madrid2.jpg" alt="" />
+          <h3>Madrid, Spain</h3>
+        </div>
+        <div class="item">
+          <div class="background-blend-2"></div>
+          <img loading="lazy" src="/others/statue-madeira.jpg" alt="" />
+          <h3>Funchal, Madeira</h3>
+        </div>
+        <div class="item">
+          <div class="background-blend-2"></div>
+          <img loading="lazy" src="/others/statue-airport.jpg" alt="" />
+          <h3>Madeira Airport</h3>
+        </div>
+      </div>
+
+      <div class="honours">
+        <h1>
+          HONORS AND TRIBUTES
+          <div class="underline"></div>
+        </h1>
+
+        <div class="wrapper">
+          <div class="scroll-container">
+            <section class="section">
+              <div class="texts">
+                <h1 class="anim">CR7 Museum</h1>
+                <p class="anim">
+                  The <span style="font-weight: 600">Museu CR7</span> is a museum that is dedicated to Cristiano
+                  Ronaldo's trophies. It is located in Ronaldo's birthplace, the city of Funchal on the Portuguese
+                  island of <span style="font-weight: 600">Madeira</span>.
+                </p>
+              </div>
+              <div class="image">
+                <img loading="lazy" src="/others/museucr7.jpg" alt="" />
+              </div>
+            </section>
+
+            <section class="section">
+              <div class="texts">
+                <h1 style="font-size: 40px" class="anim">Cristiano Ronaldo International Airport</h1>
+                <p class="anim">
+                  In a remarkable tribute to his global fame and contributions to the island of Madeira, the
+                  <span style="font-weight: 600">Madeira International Airport</span> was renamed to Cristiano Ronaldo
+                  International Airport in <span style="font-weight: 600">2017</span>. This honor recognizes Ronaldo's
+                  achievements and the pride he brings to his home island.
+                </p>
+              </div>
+              <div class="image">
+                <img loading="lazy" src="/others/cr7airport.jpg" alt="" />
+              </div>
+            </section>
+
+            <section class="section">
+              <div class="texts">
+                <h1 class="anim">Statues Honoring Ronaldo</h1>
+                <p class="anim">
+                  Several statues have been built to celebrate Cristiano Ronaldo's remarkable career and influence.
+                  <span style="font-weight: 600; cursor: pointer">Click here</span> to see them.
+                </p>
+              </div>
+              <div class="image">
+                <img loading="lazy" src="/others/statue-madrid.jpg" alt="" />
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+
+      <div class="philanthropy">
+        <h1>
+          PHILANTHROPY
+          <div class="underline"></div>
+        </h1>
+
+        <div class="card-container">
+          <div class="card">
+            <div class="card-image">
+              <img loading="lazy" src="/others/save-the-children3.jpg" alt="" />
+              <img loading="lazy" src="/others/save-the-children.jpg" alt="" />
+              <img loading="lazy" src="/others/save-the-children2.jpg" alt="" />
+            </div>
+            <div class="card-text">
+              <h1>Ambassador for Major Charities</h1>
+              <p>
+                <span style="font-weight: 500; color: white">Save the Children:</span>
+                &nbsp;&nbsp;&nbsp;As an ambassador, Ronaldo has raised awareness and funds for the organization's
+                efforts to support underprivileged children, especially in conflict and disaster zones.
+              </p>
+              <p>
+                <span style="font-weight: 500; color: white">UNICEF:</span>
+                &nbsp;&nbsp;&nbsp;Ronaldo has long been involved with UNICEF, where he advocates for children's rights,
+                education, and health.
+              </p>
+              <p>
+                <span style="font-weight: 500; color: white">World Vision:</span>
+                &nbsp;&nbsp;&nbsp;Through his involvement with World Vision, Ronaldo has helped provide education, clean
+                water, and healthcare for children in impoverished regions.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-image"><img loading="lazy" src="/others/golden-boot.jpg" alt="" /></div>
+            <div class="card-text">
+              <h1>Golden Boot Auction for Gaza</h1>
+              <p>
+                In 2011, Ronaldo auctioned off his European Golden Boot award, raising €1.2 million to fund the
+                construction of schools for children in Gaza. This highlighted his commitment to education and child
+                welfare.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-image"><img loading="lazy" src="/others/ballon-dor.jpg" alt="" /></div>
+            <div class="card-text">
+              <h1>Disaster Relief Efforts</h1>
+              <p>
+                Ronaldo has shown compassion and support in times of natural disasters. In 2015, he donated a
+                significant sum to help the victims of the Nepal earthquake and contributed to the rebuilding efforts.
+              </p>
+              <p>
+                In 2017, he auctioned off one of his Ballon d'Or trophies for £600,000, with the proceeds going to the
+                Make-A-Wish Foundation, an organization that fulfills wishes for children facing critical illnesses.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-image"><img loading="lazy" src="/others/blood-donation.jpg" alt="" /></div>
+            <div class="card-text">
+              <h1>Blood and Bone Marrow Donation Advocacy</h1>
+              <p>
+                Ronaldo is a regular blood donor and advocates for bone marrow donation, raising awareness about the
+                importance of these life-saving practices. He leads by example, actively donating and encouraging others
+                to do the same.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-text">
+              <h1>Fundraising through Football and Personal Donations</h1>
+              <p>
+                Ronaldo frequently auctions personal items, such as his football kits and memorabilia, to raise funds
+                for charitable causes. His donations have supported efforts to combat child hunger and provide medical
+                aid to communities in need.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="social-media">
+        <h1>
+          SOCIAL MEDIA
+          <div class="underline"></div>
+        </h1>
+        <p>
+          Cristiano Ronaldo has a massive social media presence with over 1 billion followers across all platforms. His
+          accounts are a mix of personal insights, promotions, endorsements, and sharing personal moments.
+        </p>
+
+        <div class="media-platform">
+          <div class="platform">
+            <div class="header">
+              <img loading="lazy" src="/logo/insta.svg" alt="instagram" />
+              <h1>Instagram</h1>
+            </div>
+          </div>
+          <div class="platform">
+            <div class="header">
+              <img loading="lazy" src="/logo/facebook.svg" alt="facebook" />
+              <h1>Facebook</h1>
+            </div>
+          </div>
+          <div class="platform">
+            <div class="header">
+              <img loading="lazy" src="/logo/twitter.svg" alt="twitter" />
+              <h1>Twitter</h1>
+            </div>
+          </div>
+          <div class="platform">
+            <div class="header">
+              <img loading="lazy" src="/logo/youtube.svg" alt="youtube" />
+              <h1>YouTube</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="height: 1px; background-color: #414141; margin: 5% 15%"></div>
+
+      <div style="height: 10vh"></div>
+
+      <div class="credit">
+        <p>
+          Designed & built by
+          <a href="https://github.com/sayanmondl/" target="_blank">sayanmondl</a>
+        </p>
+      </div>
+
+      <footer>
+        <div class="footer">
+          <p>&copy; 2024 Cristiano Ronaldo Fan Website.</p>
+          <p><a href="#">Privacy Policy</a></p>
+        </div>
+        <p class="disclaimer">
+          This is a fan-made website and is not affiliated with Cristiano Ronaldo, his representatives, or any brands he
+          works with. Images and media are the property of their respective owners.
+        </p>
+      </footer>
+    </div>
+
+    <script type="module" src="/outside-football/scripts/introduction.js"></script>
+    <script type="module" src="/outside-football/scripts/scroll-view.js"></script>
+    <script type="module" src="/outside-football/scripts/philanthropy.js"></script>
+    <script type="module" src="/outside-football/scripts/social-media.js"></script>
+
+    <script type="module" src="/modules/nav.js"></script>
+    <script type="module" src="/modules/preloader.js"></script>
+  </body>
+</html>

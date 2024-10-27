@@ -1,0 +1,43 @@
+.photoview {
+  position: fixed;
+  background-color: var(--base-color);
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid rgb(255, 255, 255);
+  z-index: 1;
+
+  display: none;
+}
+
+.photoviewer-container {
+  position: relative;
+  max-width: 90vw;
+  max-height: 90vh;
+  overflow: hidden;
+}
+
+.photoviewer-container img {
+  max-width: 100%;
+  max-height: 90vh;
+  object-fit: contain;
+}
+
+.photoview button {
+  all: unset;
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  width: 40px;
+  height: 40px;
+  background-color: var(--base-color);
+  border: 1px solid rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.photoview button img {
+  width: 20px;
+}

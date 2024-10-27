@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="A fan-made website dedicated to Cristiano Ronaldo, featuring his latest news, career highlights, statistics, achievements, and personal insights into one of the greatest footballers in history."
+    />
+
+    <link rel="stylesheet" href="/styles/variables.css" />
+    <link rel="stylesheet" href="/styles/default-styles.css" />
+    <link rel="stylesheet" href="/styles/photoview.css" />
+    <link rel="preload" href="/styles/nav-styles.css" as="style" onload="this.rel='stylesheet'" />
+    <link rel="stylesheet" href="/styles/links.css" />
+    <link rel="stylesheet" href="/styles/credit.css" />
+    <link rel="stylesheet" href="/styles/footer.css" />
+    <link rel="stylesheet" href="/styles/preloader.css" />
+
+    <link rel="preload" href="/main/styles/hero.css" as="style" onload="this.rel='stylesheet'" />
+    <link rel="stylesheet" href="/main/styles/achievements.css" />
+    <link rel="stylesheet" href="/main/styles/clubs.css" />
+    <link rel="stylesheet" href="/main/styles/moments.css" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600&family=Imbue:opsz,wght@10..100,100..900&family=League+Gothic&family=Metal&family=Roboto+Condensed:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="icon" type="image/svg+xml" href="/cr7.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cristiano Ronaldo</title>
+  </head>
+
+  <body>
+    <div id="photo" class="photoview">
+      <div class="photoviewer-container">
+        <img loading="lazy" id="photoviewImage" src="" alt="" />
+      </div>
+      <button id="closeButton">
+        <img loading="lazy" src="/ui/cross.svg" alt="" />
+      </button>
+    </div>
+
+    <div id="preloader">
+      <span class="loader"></span>
+    </div>
+
+    <div id="app" class="app">
+      <nav class="navbar">
+        <div class="logo">
+          <a href="#main">
+            <img loading="lazy" width="50px" height="30px" src="/cr7-text.svg" alt="CR7" />
+          </a>
+        </div>
+
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#main">
+              HOME
+              <div class="underline-nav"></div>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="/stats.html">
+              STATS
+              <div class="underline-nav"></div>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="/outside-football.html">
+              OUTSIDE FOOTBALL
+              <div class="underline-nav"></div>
+            </a>
+          </li>
+        </ul>
+
+        <button id="hamButton" class="hamburger">
+          <img loading="lazy" src="/ui/menu-burger.png" alt="" />
+        </button>
+
+        <div class="hamburger-menu">
+          <ul class="hamburger-nav-list">
+            <li class="nav-item">
+              <a href="#main">
+                HOME
+                <div class="underline-nav"></div>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="/stats.html">
+                STATS
+                <div class="underline-nav"></div>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="/outside-football.html">
+                OUTSIDE FOOTBALL
+                <div class="underline-nav"></div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div id="main" class="hero">
+        <div class="text-container">
+          <h1 class="hero-text">
+            <span class="hero-text-line">HELLO,</span>
+            <br />
+            <span class="hero-text-line">I AM</span>
+            <span id="siuu" class="hero-text-line">CRISTIANO RONALDO.</span>
+            <div class="underline"></div>
+          </h1>
+
+          <h1 class="siuu">SIUUU...</h1>
+
+          <p class="hero-para">
+            <span>
+              Cristiano Ronaldo dos Santos Aveiro is a Portuguese professional footballer who plays as a forward for Al
+              Nassr and the Portugal national team. He has been regarded as one of the
+            </span>
+            <span style="color: #f88e47; font-weight: 400"> Greatest Player of All Time. </span>
+          </p>
+        </div>
+
+        <div class="carousel-container">
+          <div class="carousel">
+            <div class="carousel-item">
+              <div class="image">
+                <div class="background-blend"></div>
+                <img width="700" height="700" class="cristiano" src="/mu-ronaldo.jpg" alt="" />
+              </div>
+              <div class="image-texts">
+                <h2 class="cristiano-ronaldo">
+                  <span class="image-text-line">CRISTIANO RONALDO</span>
+                </h2>
+                <p class="image-para">&mdash;&nbsp;&nbsp; At Manchester United</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="image">
+                <div class="background-blend"></div>
+                <img loading="lazy" class="cristiano" src="/ronaldo.jpg" alt="" />
+              </div>
+              <div class="image-texts">
+                <h2 class="cristiano-ronaldo">
+                  <span class="image-text-line">CRISTIANO RONALDO</span>
+                </h2>
+                <p class="image-para">&mdash;&nbsp;&nbsp; At Ballon D'Or Ceremony 2017.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="image">
+                <div class="background-blend"></div>
+                <video class="cristiano" width="600px" autoplay muted loop>
+                  <source data-src="/videos/bicycle-goal.mp4" type="" />
+                </video>
+              </div>
+              <div class="image-texts">
+                <h2 class="cristiano-ronaldo">
+                  <span class="image-text-line">CRISTIANO RONALDO</span>
+                </h2>
+                <p class="image-para">
+                  &mdash;&nbsp;&nbsp; Scoring his iconic Bicycle Kick in UCL 2018 against Juventus.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="image">
+                <div class="background-blend"></div>
+                <img loading="lazy" class="cristiano" src="/cristiano.jpg" alt="" />
+              </div>
+              <div class="image-texts">
+                <h2 class="cristiano-ronaldo">
+                  <span class="image-text-line">CRISTIANO RONALDO</span>
+                </h2>
+                <p class="image-para">&mdash;&nbsp;&nbsp; After winning his fifth UCL Trophy.</p>
+              </div>
+            </div>
+          </div>
+          <div class="right-arrow-button-container">
+            <button id="next-button" class="right-arrow">Next</button>
+          </div>
+          <div class="dots">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+
+      <div id="achievements" class="achievements">
+        <h1 class="achievements-text">
+          ACHIEVEMENTS
+          <div class="underline"></div>
+        </h1>
+
+        <div class="achievements-para-holder">
+          <p class="achievements-para">
+            <a href="#main">
+              <span class="achievements-para achievements-para-highlights-2">Cristiano Ronaldo</span>
+            </a>
+            <span class="achievements-para">has won</span>
+            <span class="achievements-para">33</span>
+            <span class="achievements-para">trophies in his career</span>
+            <span class="achievements-para">(still counting...)</span>
+            <span class="achievements-para">,&nbsp; including</span>
+            <span class="achievements-para">seven</span>
+            <a href="https://en.wikipedia.org/wiki/UEFA_Champions_League">
+              <span class="achievements-para achievements-para-highlights-2">league titles</span>
+            </a>
+            <span class="achievements-para">,&nbsp; five </span>
+            <a href="https://en.wikipedia.org/wiki/UEFA_Champions_League">
+              <span class="achievements-para achievements-para-highlights-2">UEFA Champions Leagues</span>
+            </a>
+            <span class="achievements-para">,&nbsp; the </span>
+            <a href="https://en.wikipedia.org/wiki/UEFA_European_Championship">
+              <span class="achievements-para achievements-para-highlights-2">UEFA European Championship</span>
+            </a>
+            <span class="achievements-para">and the</span>
+            <a href="https://en.wikipedia.org/wiki/UEFA_Nations_League">
+              <span class="achievements-para achievements-para-highlights-2">UEFA Nations League.</span>
+            </a>
+          </p>
+        </div>
+
+        <div class="achievements-carousel">
+          <div class="achievements-carousel-item" data-index="0">
+            <!-- Ballon D'Or -->
+            <div class="carousel-text">
+              <h2 class="carousel-text-header">5 BALLON D'ORS</h2>
+              <p class="carousel-text-subtext">Cristiano won the "Ballon D'Or" in 2008, 2013, 2014, 2016 and 2017</p>
+            </div>
+            <img loading="lazy" width="300" height="400" draggable="false" src="/cr7-with-b-dor.jpg" alt="" />
+          </div>
+
+          <div class="achievements-carousel-item" data-index="1">
+            <!-- Puskas -->
+            <div class="carousel-text">
+              <h2 class="carousel-text-header">PUSKAS AWARD</h2>
+              <p class="carousel-text-subtext">Cristiano won the "FIFA Puskás award" in 2009</p>
+            </div>
+            <img loading="lazy" width="300" height="400" draggable="false" src="puskas.jpeg" alt="" />
+          </div>
+
+          <div class="achievements-carousel-item" data-index="2">
+            <!-- GOlden Boot -->
+            <div class="carousel-text">
+              <h2 class="carousel-text-header">GOLDEN BOOT</h2>
+              <p class="carousel-text-subtext">
+                Cristiano Ronaldo won four "European Golden Shoes" in 2008, 2011, 2014, 2015.
+              </p>
+            </div>
+            <img loading="lazy" width="300" height="400" draggable="false" src="/golden-boot.jpg" alt="" />
+          </div>
+
+          <div class="achievements-carousel-item" data-index="3">
+            <!-- 5 UEFA Champions League -->
+            <div class="carousel-text">
+              <h2 class="carousel-text-header">MR. UCL</h2>
+              <p class="carousel-text-subtext">Cristiano Ronaldo won the "UEFA Champions League" 5 times</p>
+            </div>
+            <img loading="lazy" width="300" height="400" draggable="false" src="/cristiano.jpg" alt="" />
+          </div>
+
+          <div class="achievements-carousel-item" data-index="4">
+            <!-- FIFA the Best -->
+            <div class="carousel-text">
+              <h2 class="carousel-text-header">FIFA THE BEST</h2>
+              <p class="carousel-text-subtext">Cristiano won "FIFA the best" award in 2016 and 2017</p>
+            </div>
+            <img loading="lazy" width="300" height="400" draggable="false" src="/the-best.jpg" alt="" />
+          </div>
+
+          <div class="achievements-carousel-item" data-index="5">
+            <!-- 3 times UEFA Men's Player of the year -->
+            <div class="carousel-text">
+              <h2 class="carousel-text-header">UEFA MEN'S PLAYER OF THE YEAR</h2>
+              <p class="carousel-text-subtext">Cristiano was "UEFA Men's Player of the Year" in 2014, 2016 and 2017</p>
+            </div>
+            <img loading="lazy" width="300" height="400" draggable="false" src="/uefa-the-best.jpg" alt="" />
+          </div>
+
+          <div class="achievements-carousel-item" data-index="5">
+            <!-- FIFA Golden Ball -->
+            <div class="carousel-text">
+              <h2 class="carousel-text-header">GOLDEN BALL</h2>
+              <p class="carousel-text-subtext">Cristiano won FIFA Golden Ball in 2016</p>
+            </div>
+            <img loading="lazy" width="300" height="400" draggable="false" src="/golden-ball.jpg" alt="" />
+          </div>
+        </div>
+
+        <div class="arrow-buttons">
+          <button id="leftButton">
+            <img loading="lazy" src="/ui/left.svg" alt="left-arrow" />
+          </button>
+          <button id="rightButton">
+            <img loading="lazy" src="/ui/right.svg" alt="right-arrow" />
+          </button>
+        </div>
+      </div>
+
+      <div id="clubs" class="clubs">
+        <h1 class="clubs-text">
+          CLUBS
+          <div class="underline"></div>
+        </h1>
+
+        <div class="clubs-carousel">
+          <div class="clubs-carousel-track">
+            <!-- Manchester -->
+            <div class="clubs-carousel-item">
+              <video autoplay muted loop class="clubs-carousel-video">
+                <source data-src="/videos/manchester1.mp4" type="" />
+              </video>
+              <div class="clubs-carousel-text-container">
+                <h1 class="clubs-carousel-text">
+                  MANCHESTER UNITED HIGHLIGHTS (2003 -2009)
+                  <div class="clubs-underline"></div>
+                </h1>
+              </div>
+              <div class="club-year">
+                <p class="club-year-detail">2003 - 2009</p>
+              </div>
+            </div>
+
+            <!-- Hala Madrid -->
+            <div class="clubs-carousel-item">
+              <video autoplay muted loop class="clubs-carousel-video">
+                <source data-src="/videos/madrid.mp4" type="" />
+              </video>
+              <div class="clubs-carousel-text-container">
+                <h1 class="clubs-carousel-text">
+                  REAL MADRID HIGHLIGHTS
+                  <div class="clubs-underline"></div>
+                </h1>
+              </div>
+              <div class="club-year">
+                <p class="club-year-detail">2009 - 2018</p>
+              </div>
+            </div>
+
+            <!-- Juve -->
+            <div class="clubs-carousel-item">
+              <video autoplay muted loop class="clubs-carousel-video">
+                <source data-src="/videos/juventus.mp4" type="" />
+              </video>
+              <div class="clubs-carousel-text-container">
+                <h1 class="clubs-carousel-text">
+                  JUVENTUS HIGHLIGHTS
+                  <div class="clubs-underline"></div>
+                </h1>
+              </div>
+              <div class="club-year">
+                <p class="club-year-detail">2018 - 2021</p>
+              </div>
+            </div>
+
+            <!-- Manchester -->
+            <div class="clubs-carousel-item">
+              <video autoplay muted loop class="clubs-carousel-video">
+                <source data-src="/videos/manchester2.mp4" type="" />
+              </video>
+              <div class="clubs-carousel-text-container">
+                <h1 class="clubs-carousel-text">
+                  MANCHESTER UNITED HIGHLIGHTS (2021 - 2022)
+                  <div class="clubs-underline"></div>
+                </h1>
+              </div>
+              <div class="club-year">
+                <p class="club-year-detail">2021 - 2022</p>
+              </div>
+            </div>
+
+            <!-- AlNassr -->
+            <div class="clubs-carousel-item">
+              <video autoplay muted loop class="clubs-carousel-video">
+                <source data-src="/videos/alnassr.mp4" type="" />
+              </video>
+              <div class="clubs-carousel-text-container">
+                <h1 class="clubs-carousel-text">
+                  AL-NASSR HIGHLIGHTS
+                  <div class="clubs-underline"></div>
+                </h1>
+              </div>
+              <div class="club-year">
+                <p class="club-year-detail">2023 - Now</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="clubs-button-holder">
+            <div class="carousel-line"></div>
+
+            <button id="button-manchester" class="clubs-button">
+              <img loading="lazy" src="/club-button/ManchesterUnited.svg" alt="" />
+            </button>
+            <div class="clubname manchester">Manchester United</div>
+            <button id="button-madrid" class="clubs-button">
+              <img loading="lazy" src="/club-button/RealMadrid.svg" alt="" />
+            </button>
+            <div class="clubname madrid">Real Madrid</div>
+            <button id="button-juve" class="clubs-button">
+              <img loading="lazy" src="/club-button/Juventus.svg" alt="" />
+            </button>
+            <div class="clubname juve">Juventus</div>
+            <button id="button-manchester-2" class="clubs-button">
+              <img loading="lazy" src="/club-button/ManchesterUnited.svg" alt="" />
+            </button>
+            <div class="clubname manchester2">Manchester United</div>
+            <button id="button-alnassr" class="clubs-button">
+              <img loading="lazy" src="/club-button/AlNassr.svg" alt="" />
+            </button>
+            <div class="clubname alnassr">Al Nassr</div>
+            <div class="carousel-line"></div>
+          </div>
+        </div>
+
+        <h1 class="clubs-text">
+          CLUB STATS
+          <div class="clubs-underline"></div>
+        </h1>
+
+        <div class="club-stats">
+          <div class="club-stats-item sporting-cp">
+            <div class="club-stats-item-image">
+              <img loading="lazy" src="/clubs-square/SportingCP.svg" alt="" />
+            </div>
+            <div class="club-stats-item-text">
+              <h1>Sporting CP (2002 - 2003)</h1>
+              <p>
+                On 14 August 2002, Ronaldo, then 17, played his first official match for the first team, in a UEFA
+                Champions League qualifying round at José Alvalade Stadium against Inter Milan. He came on in the 58th
+                minute in place of Toñito.
+              </p>
+            </div>
+            <div class="club-stats-item-detail">
+              <div class="club-stats-of">
+                APPS.
+                <h1 class="club-stats-detail-info apps"></h1>
+              </div>
+              <div class="club-stats-of">
+                GOALS
+                <h1 class="club-stats-detail-info goals"></h1>
+              </div>
+            </div>
+          </div>
+
+          <div class="club-stats-item manchester-united">
+            <div class="club-stats-item-image">
+              <img loading="lazy" src="/clubs-square/ManchesterUnited.svg" alt="" />
+            </div>
+            <div class="club-stats-item-text">
+              <h1>Manchester United (2003 - 2009)&nbsp;&nbsp;&nbsp;&&nbsp;&nbsp;&nbsp;(2021 - 2022)</h1>
+              <p>
+                Manchester United's signed Ronaldo for £12 million on 12 August 2003, an England record for a teenager.
+                This also made him the first Portuguese player to sign for the club.
+              </p>
+            </div>
+            <div class="club-stats-item-detail">
+              <div class="club-stats-of">
+                APPS.
+                <h1 class="club-stats-detail-info apps"></h1>
+              </div>
+              <div class="club-stats-of">
+                GOALS
+                <h1 class="club-stats-detail-info goals"></h1>
+              </div>
+            </div>
+          </div>
+
+          <div class="club-stats-item real-madrid">
+            <div class="club-stats-item-image">
+              <img loading="lazy" loading="lazy" src="/clubs-square/RealMadrid.svg" alt="" />
+            </div>
+            <div class="club-stats-item-text">
+              <h1>Real Madrid CF (2009 - 2018)</h1>
+              <p>
+                In 2009, Ronaldo transferred to Real Madrid for a then world record £80 million. His contract, which ran
+                until 2015, was worth €11 million per year and contained a €1 billion buy-out clause.
+              </p>
+            </div>
+            <div class="club-stats-item-detail">
+              <div class="club-stats-of">
+                APPS.
+                <h1 class="club-stats-detail-info apps"></h1>
+              </div>
+              <div class="club-stats-of">
+                GOALS
+                <h1 class="club-stats-detail-info goals"></h1>
+              </div>
+            </div>
+          </div>
+
+          <div class="club-stats-item juventus">
+            <div class="club-stats-item-image">
+              <img loading="lazy" src="/clubs-square/Juventus.svg" alt="" />
+            </div>
+            <div class="club-stats-item-text">
+              <h1>Juventus (2018 - 2021)</h1>
+              <p>
+                On 10 July 2018, Ronaldo signed a four-year contract with Italian club Juventus after completing a €100
+                million transfer, which included an additional €12 million in other fees and solidarity contributions to
+                Ronaldo's youth clubs.
+              </p>
+            </div>
+            <div class="club-stats-item-detail">
+              <div class="club-stats-of">
+                APPS.
+                <h1 class="club-stats-detail-info apps"></h1>
+              </div>
+              <div class="club-stats-of">
+                GOALS
+                <h1 class="club-stats-detail-info goals"></h1>
+              </div>
+            </div>
+          </div>
+
+          <div class="club-stats-item al-nassr">
+            <div class="club-stats-item-image">
+              <img loading="lazy" src="/clubs-square/AlNassr.svg" alt="" />
+            </div>
+            <div class="club-stats-item-text">
+              <h1>Al Nassr FC (2023 - Now)</h1>
+              <p>
+                On 30 December 2022, Saudi club Al Nassr reached an agreement for Ronaldo to join the club effective 1
+                January 2023, signing a contract until 2025.
+              </p>
+            </div>
+            <div class="club-stats-item-detail">
+              <div class="club-stats-of">
+                APPS.
+                <h1 class="club-stats-detail-info apps"></h1>
+              </div>
+              <div class="club-stats-of">
+                GOALS
+                <h1 class="club-stats-detail-info goals"></h1>
+              </div>
+            </div>
+          </div>
+
+          <h1 style="margin: 5% auto" class="clubs-text">
+            INTERNATIONAL STATS
+            <div class="clubs-underline"></div>
+          </h1>
+
+          <div class="club-stats-item portugal">
+            <div class="club-stats-item-image">
+              <img loading="lazy" src="/clubs-square/Portugal.svg" alt="" />
+            </div>
+            <div class="club-stats-item-text">
+              <h1>Prtugal (2003 - Now)</h1>
+              <p>
+                At the age of 18, Ronaldo made his debut for Portugal as a substitute against Kazakhstan on 20 August
+                2003. At UEFA Euro 2004, he scored his first international goal in a 2-1 group stage loss to Greece in
+                his eighth international appearance.
+              </p>
+            </div>
+            <div class="club-stats-item-detail">
+              <div class="club-stats-of">
+                APPS.
+                <h1 class="club-stats-detail-info apps"></h1>
+              </div>
+              <div class="club-stats-of">
+                GOALS
+                <h1 class="club-stats-detail-info goals"></h1>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div style="display: flex; align-items: center; margin-top: 30px; gap: 20px">
+          <p style="font-family: var(--subtext-font); color: var(--text-color); font-weight: 300">
+            Get the full stats here
+          </p>
+          <a href="/stats.html">
+            <button class="enter-button">
+              <span>Stats</span>
+              <img loading="lazy" src="/ui/arrow-right.svg" alt="arrow-icon" />
+            </button>
+          </a>
+        </div>
+      </div>
+
+      <div style="height: 1px; background-color: #414141; margin: 10% 15%"></div>
+
+      <div class="moment-banner">
+        <div class="background-blend"></div>
+        <img loading="lazy" src="/banner.jpg" alt="" />
+        <div class="moment-banner-text">
+          <h1>Remarkable&ThickSpace;</h1>
+          <h1>Moments</h1>
+        </div>
+      </div>
+
+      <div id="moments" class="moments">
+        <div class="moment-bicycle-kick">
+          <div class="moment-image">
+            <div class="background-blend"></div>
+            <img loading="lazy" src="/bicycle.jpg" alt="" />
+          </div>
+          <div class="moment-text">
+            <h1>Cristiano's Iconic Bicycle Kick in 2018</h1>
+            <p>
+              Cristiano Ronaldo scored an insane bicycle goal in UCL 2018 Quarter final against Juventus. Cristiano
+              himself said that this one is his favourite goal, although this did not get a Puskas award. Juventus
+              defender Andrea Barzagli described this goal as "Playstation Goal". It garnered him a standing ovation
+              from the opposing fans in the stadium as well as a plethora of plaudits from peers, pundits and coaches.
+            </p>
+          </div>
+        </div>
+
+        <div class="moment-siuu-celebration">
+          <div class="moment-image">
+            <div class="background-blend"></div>
+            <img loading="lazy" src="/cr7-marcelo.jpg" alt="" />
+          </div>
+          <div class="moment-text">
+            <h1>The SIUUUU... Celebration</h1>
+            <p>
+              After scoring a goal, he usually celebrates with a "storming jump" and "turn", before "landing in
+              spread-eagled fashion" into his "signature power stance", while usually simultaneously exclaiming "Sí" It
+              has also been known as "suiii", "siiuuu", "siii" or "Right Here Right Now", formally the Cristiano Ronaldo
+              celebration.
+            </p>
+          </div>
+        </div>
+
+        <div class="moment-ucl-2014">
+          <div class="moment-image">
+            <div class="background-blend"></div>
+            <img loading="lazy" src="/cr17goals.jpg" alt="" />
+          </div>
+          <div class="moment-text">
+            <h1>17 Goals In a UCL Season!</h1>
+            <p>
+              By the end of the 2013-14 UEFA Champions League season, Ronaldo had broken the record for the most goals
+              scored by a player in a single season, finding the back of the net 17 times to help Real Madrid win a
+              record tenth title.
+            </p>
+          </div>
+        </div>
+
+        <div class="moment-realmadrid">
+          <div class="moment-image">
+            <div class="background-blend"></div>
+            <img loading="lazy" src="/halamadrid.jpg" alt="" />
+          </div>
+          <div class="moment-text">
+            <h1>¡Hala Madrid!</h1>
+            <p>Cristiano Ronaldo at training session with his Real Madrid teammates.</p>
+          </div>
+        </div>
+
+        <div class="moment-al-nassr-presentation">
+          <div class="moment-image">
+            <div class="background-blend"></div>
+            <img loading="lazy" src="/alnassr-ceremony.jpg" alt="" />
+          </div>
+          <div class="moment-text">
+            <h1>Cristiano's Unveiling Ceremony At Al Nassr</h1>
+            <p>
+              Al Nassr arranged an overwhelming ceremony for Cristiano Ronaldo's Presentation. This Presentation got
+              over 3 billion views on 40 channnels around the world.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div style="height: 1px; background-color: #414141; margin: 10% 15%"></div>
+
+      <div class="links">
+        <div class="download-link">
+          <h1>Download the stats JSON file</h1>
+          <a href="/api/stats/download" download>
+            <button class="download-button">
+              <span>Download</span>
+              <img loading="lazy" src="/ui/download.svg" alt="download-icon" />
+            </button>
+          </a>
+        </div>
+
+        <div class="contact">
+          <p>
+            If there is any issue in the stats or not updated, <br />
+            Inform here:
+          </p>
+          <textarea name="mistakes" placeholder="Your text goes here ..."></textarea>
+          <button class="submit-button">Submit</button>
+        </div>
+      </div>
+
+      <div class="credit">
+        <p>
+          Designed & built by
+          <a href="https://github.com/sayanmondl/" target="_blank">sayanmondl</a>
+        </p>
+      </div>
+
+      <footer>
+        <div class="footer">
+          <p>&copy; 2024 Cristiano Ronaldo Fan Website.</p>
+          <p><a href="#">Privacy Policy</a></p>
+        </div>
+        <p class="disclaimer">
+          This is a fan-made website and is not affiliated with Cristiano Ronaldo, his representatives, or any brands he
+          works with. Images and media are the property of their respective owners.
+        </p>
+      </footer>
+    </div>
+
+    <script type="module" src="/main/scripts/hero.js"></script>
+    <script type="module" src="/main/scripts/achievements.js"></script>
+    <script type="module" src="/main/scripts/clubs.js"></script>
+    <script type="module" src="/main/scripts/moments.js"></script>
+
+    <script type="module" src="/modules/nav.js"></script>
+    <script type="module" src="/modules/photoview.js"></script>
+    <script type="module" src="/modules/preloader.js"></script>
+  </body>
+</html>

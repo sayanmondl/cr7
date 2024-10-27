@@ -1,0 +1,149 @@
+.key-stats {
+  margin-left: 10%;
+  margin-right: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.key-stats h1 {
+  margin-top: 80px;
+  font-family: var(--base-font);
+  font-weight: 100;
+  font-size: 48px;
+  color: var(--text-color);
+}
+
+.key-stats-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.key-stat-item {
+  border: 2px solid #343434;
+  border-radius: 10px;
+  margin: 10px;
+  background: rgba(26, 26, 26, 0.5);
+  flex: 30%;
+  transition: transform 0.3s ease;
+}
+
+.key-stat-item:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  transform: scale(1.02);
+}
+
+.key-stat-item-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 2px solid #343434;
+}
+
+.key-stat-item-title h1 {
+  font-size: 36px;
+  font-weight: 100;
+  margin: 0;
+}
+
+.key-stat-item-title img {
+  width: 40px;
+  height: 40px;
+}
+
+.key-stat-item-info {
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.key-stat-item-info h1 {
+  font-size: 58px;
+  margin: 0;
+}
+
+.key-stat-item-info p {
+  font-size: 16px;
+  font-family: var(--subtext-font);
+  color: var(--text-color-faded);
+  text-align: center;
+}
+
+.stat-info-text {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.stat-info-text p {
+  font-family: var(--base-font) !important;
+  margin: 10px 0;
+  margin-left: 5px;
+}
+
+@media (max-width: 1300px) {
+  .key-stats h1 {
+    font-size: 36px;
+  }
+  .key-stat-item-title h1 {
+    font-size: x-large;
+  }
+  .key-stat-item-title img {
+    width: 32px;
+    height: 32px;
+  }
+  .key-stat-item-info h1 {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 1280px) {
+}
+
+@media (max-width: 1100px) {
+  .key-stat-item-info > p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 980px) {
+  .key-stat-item-title {
+    padding: 10px;
+  }
+  .key-stats h1 {
+    font-size: 28px;
+  }
+  .key-stat-item-info h1 {
+    font-size: 40px;
+  }
+  .key-stat-item-title h1 {
+    font-size: x-large;
+  }
+}
+
+@media (max-width: 920px) {
+}
+
+@media (max-width: 780px) {
+  .key-stat-item-title img {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+@media (max-width: 600px) {
+  .key-stat-item-info > p {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 550px) {
+  .key-stat-item {
+    flex: 60%;
+  }
+}
