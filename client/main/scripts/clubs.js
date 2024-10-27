@@ -197,30 +197,21 @@ alnassrButton.addEventListener('click', function () {
   carousel.style.cursor = `url("/clubs/AlNassr.svg"), auto`;
 });
 
-document.addEventListener('DOMContentLoaded', function () {
-  let lazyVideos = [].slice.call(document.querySelectorAll('.clubs-carousel-video'));
-
-  if ('IntersectionObserver' in window) {
-    let lazyVideoObserver = new IntersectionObserver(function (entries, observer) {
-      entries.forEach(function (entry) {
-        if (entry.isIntersecting) {
-          let video = entry.target;
-          let sources = video.querySelectorAll('source');
-          sources.forEach(function (source) {
-            source.src = source.dataset.src;
-          });
-          video.load();
-          lazyVideoObserver.unobserve(video);
-        }
-      });
-    });
-
-    lazyVideos.forEach(function (lazyVideo) {
-      lazyVideoObserver.observe(lazyVideo);
-    });
-  }
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const video = entry.target;
+      video.setAttribute('preload', 'auto');
+      video.play();
+      observer.unobserve(video);
+    }
+  });
 });
 
+document.querySelectorAll('video.clubs-carousel-video').forEach(video => {
+  observer.observe(video);
+  video.pause();
+});
 
 const updateStats = (sectionClass, stats) => {
   const goalElement = document.querySelector(`.${sectionClass} .goals`);
